@@ -26,46 +26,6 @@ console.log('yeah');
 
 module.exports = db
 
-//below
-//execute all the queries you need
-//now fetch it
-
-// db.any(`
-// select * from photojj
-// `)
-//     .then((data) => {
-
-//         console.log('here is data');
-//         console.log(data);
-//     })
-//     .catch((err) => {
-//         console.log('there is an error');
-//         console.log(err);
-
-//     })
-
-
-
-//when you want one and only one,
-//user the .one() method.
-//that way, if you don't find it,
-//it triggers the .catch()
-//this is better than doing an if/else
-//inside your .then
-db.one(`
-    select * from photojj where id=1
-    `)
-        .then((data) => {
-    
-            console.log('here is data');
-            console.log(data);
-        })
-        .catch((err) => {
-            console.log('there is an error');
-            console.log(err);
-    
-        })
-
 
 
 
