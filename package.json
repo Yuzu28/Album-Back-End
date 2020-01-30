@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "dev": "nodemon index.js",
     "db:create": "createdb photos-app",
     "db:init": "psql -f schema.sql photos-app && psql -f seed.sql photos-app",
     "db:destroy": "dropdb photos-app",

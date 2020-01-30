@@ -5,14 +5,16 @@ function getAll(){
     //below
 // execute all the queries you need
 // now fetch it
-    db.any(`
+//we return the promise by db.any
+//db.any() return a promise
+    return db.any(`
         select * from photojj
     `)
-        .then((data) => {
+        // .then((data) => {
     
-            console.log('here is data');
-            console.log(data);
-        })
+        //     console.log('here is data');
+        //     console.log(data);
+        // })
         .catch((err) => {
             console.log('there is an error');
             console.log(err);
